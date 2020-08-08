@@ -5,10 +5,7 @@ end
 
 # Define your WIN_COMBINATIONS constant
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-def top_row_win = [0,1,2]
-  if board[top_row_win[0]] == "X" && board[top_row_win[1]] == "X" && board[top_row_win[2]] == "X"
-  end
-def WIN_COMBINATIONS = [
+  WIN_COMBINATIONS = [
   [0, 1, 2],
   [3, 4, 5],
   [6, 7, 8],
@@ -30,7 +27,7 @@ def won?(board)
     position_1 = board[win_index_1]
     position_2 = board[win_index_2]
     position_3 = board[win_index_3]
-    if position_1 == position_2 && position_2 == position_3 && position_taken?(board, win_index_1)
+    if position_1 == "X" && position_2 == "X" && position_3 == "X"
     return win_combination
 end
 end
