@@ -32,5 +32,6 @@ def won?(board)
   else
     false 
 end
+won?(board)
 end
 end
