@@ -53,3 +53,8 @@ def over?(board)
     return false
   end
 end 
+def winner(board)
+  if won?(board)
+    return win_index_1
+  end 
+end 
