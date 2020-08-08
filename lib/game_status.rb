@@ -52,9 +52,9 @@ def over?(board)
   elsif !won?(board) || !full?(board) || !draw?(board)
     return false
   end
-end 
+end
 def winner(board)
   if won?(board)
     return win_index_1
-  end 
+  end
 end 
