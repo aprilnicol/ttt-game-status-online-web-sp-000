@@ -30,3 +30,10 @@ def won?(board)
 end
 return false
 end
+def full?(board)
+  if board.any? {|full_board| full_board == nil || full_board == " "}
+    return false 
+  else 
+    return true 
+  end 
+end 
