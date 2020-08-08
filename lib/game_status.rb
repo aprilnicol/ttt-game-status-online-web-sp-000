@@ -7,8 +7,8 @@ end
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 def top_row_win = [0,1,2]
   if board[top_row_win[0]] == "X" && board[top_row_win[1]] == "X" && board[top_row_win[2]] == "X"
-  end 
-WIN_COMBINATIONS = [
+  end
+def WIN_COMBINATIONS = [
   [0, 1, 2],
   [3, 4, 5],
   [6, 7, 8],
